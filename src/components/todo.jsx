@@ -18,7 +18,7 @@ const todo = () => {
     <div className="App">
       <h1>A simple to-do list</h1>
       <input
-        type="text"
+        type="textarea"
         name=""
         id=""
         placeholder="enter a new Task"

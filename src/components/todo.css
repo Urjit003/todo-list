@@ -1,16 +1,9 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-}
 .App {
-    display:inline-block;
     text-align: center;
     margin-top: 50px;
   }
   
   input {
-    margin-top: 20px;
     padding: 10px;
     font-size: 16px;
   }
@@ -22,4 +15,29 @@
     cursor: pointer;
   }
   
+  ul {
+    list-style-type: armenian;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  li button:hover {
+    background-color: darkred;
+  }
   
