@@ -39,7 +39,7 @@ Follow these steps to set up the project locally:
 4. **Start the development server**:
 
    \`\`\`
-   npm start
+   npm run dev
    \`\`\`
 
    This will start the React development server. The application will open automatically in your default web browser.
