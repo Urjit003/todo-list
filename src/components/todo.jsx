@@ -4,9 +4,13 @@ const todo = () => {
   const [todo, setTodo] = useState([]);
   const [val, setVal] = useState("");
 
-  const addTodo = (e) => {
+  const addTodo = () => {
     if (val.trim()) {
-      setTodo((t) => [...t, val]);
+      if (todo.includes(val)) {
+        window.confirm(`${val} is already in side your list.`);
+      } else {
+        setTodo((t) => [...t, val]);
+      }
       setVal("");
     }
   };
@@ -14,13 +18,13 @@ const todo = () => {
     const newTodos = todo.filter((_, i) => i !== index);
     setTodo(newTodos);
   };
+
   return (
     <div className="App">
       <h1>A simple to-do list</h1>
       <input
-        type="textarea"
-        name=""
-        id=""
+        type="text"
+        value={val}
         placeholder="enter a new Task"
         onChange={(e) => setVal(e.target.value)}
       />
